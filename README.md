@@ -1,0 +1,1 @@
+Simple Python app to demonstrate CI/CD using GitHub Actions.
