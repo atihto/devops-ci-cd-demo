@@ -1,4 +1,11 @@
-def hello():
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
     return "Hello, DevOps CI/CD!"
-if __name__ == "__main__":
-    print(hello())
+
+@app.route("/health")
+def health():
+    return "OK", 200
